@@ -20,7 +20,7 @@ L’applicazione visualizza alla prima apertura l’elenco delle ultime 10 news 
 In caso si desideri visualizzare più notizie, è sufficiente fare click sul pulsante "load more", a questo punto l’applicazione effettua nuovamente la chiamata all' API per ottenere i dettagli delle 10 successive news, e le visualiza a schermo, e così via.<br/>
 <br/>
 Le chiamate alle API si effettuano tramite funzioni asincrone (async) con l'utilizzo di fetch('url').<br/>
-Qui ad esempio la prima funzione per il caricamento degli ID:<br/>
+Qui ad esempio la prima funzione per il caricamento degli ID:<br/><br/>
   <i>async function logNews() {<br/>
     try {<br/>
       const response = await fetch(<br/>
@@ -34,5 +34,5 @@ Qui ad esempio la prima funzione per il caricamento degli ID:<br/>
     }<br/>
   }<br/></i>
 <br/>
-*La data ricevuta dall'API come Timestamp riporta sempre la data del 20 gennaio 1970 (le news sono tutte attuali e caricate in tempo reale), per questo motivo nel mio programma ho inserito una modifica a questo valore. In questo modo le date sembrano risalire ad oggi (25/02/24) e ai giorni precedenti.. <br/>
-  <i>let datems = details.time + 1706473411733 + (10 - num - i) * 71257499;<br/></i>
+*La data ricevuta dall'API come Timestamp riporta sempre la data del 20 gennaio 1970 (le news sono tutte attuali e caricate in tempo reale), per questo motivo nel mio programma ho inserito una modifica a questo valore. In questo modo le date sembrano risalire ad oggi (25/02/24) e ai giorni precedenti.. <br/><br/>
+  <i>&nbsp&nbsplet datems = details.time + 1706473411733 + (10 - num - i) * 71257499;<br/></i>
