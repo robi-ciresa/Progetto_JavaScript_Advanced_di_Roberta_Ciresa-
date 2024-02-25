@@ -21,18 +21,18 @@ In caso si desideri visualizzare più notizie, è sufficiente fare click sul pul
 <br/>
 Le chiamate alle API si effettuano tramite funzioni asincrone (async) con l'utilizzo di fetch('url').<br/>
 Qui ad esempio la prima funzione per il caricamento degli ID:<br/><br/>
-  <i>async function logNews() {<br/>
-    try {<br/>
-      const response = await fetch(<br/>
-        "https://hacker-news.firebaseio.com/v0/newstories.json"<br/>
-      );<br/>
-      news = await response.json();<br/>
-      loadDetails(num);<br/>
-      return news;<br/>
-    } catch (error) {<br/>
-      console.log(error);<br/>
-    }<br/>
-  }<br/></i>
+<i> &nbsp&nbspasync function logNews() {<br/>
+    &nbsp&nbsp&nbsptry {<br/>
+    &nbsp&nbsp&nbsp&nbspconst response = await fetch(<br/>
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp"https://hacker-news.firebaseio.com/v0/newstories.json"<br/>
+    &nbsp&nbsp&nbsp&nbsp);<br/>
+    &nbsp&nbsp&nbsp&nbspnews = await response.json();<br/>
+    &nbsp&nbsp&nbsp&nbsploadDetails(num);<br/>
+    &nbsp&nbsp&nbsp&nbspreturn news;<br/>
+    &nbsp&nbsp&nbsp} catch (error) {<br/>
+    &nbsp&nbsp&nbsp&nbspconsole.log(error);<br/>
+    &nbsp&nbsp&nbsp}<br/>
+    &nbsp&nbsp}<br/></i>
 <br/>
 *La data ricevuta dall'API come Timestamp riporta sempre la data del 20 gennaio 1970 (le news sono tutte attuali e caricate in tempo reale), per questo motivo nel mio programma ho inserito una modifica a questo valore. In questo modo le date sembrano risalire ad oggi (25/02/24) e ai giorni precedenti.. <br/><br/>
   <i>&nbsp&nbsplet datems = details.time + 1706473411733 + (10 - num - i) * 71257499;<br/></i>
