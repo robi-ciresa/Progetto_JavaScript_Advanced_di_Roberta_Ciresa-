@@ -1,0 +1,4 @@
+# directory npm
+/node_modules
+# dist put "/dist" when deploy , undist when push or just for repo
+/dist
