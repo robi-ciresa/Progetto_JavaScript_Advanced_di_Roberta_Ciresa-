@@ -4,7 +4,7 @@
 <h2>Descrizione breve</h2>
 Questo progetto sviluppato come esercizio per il corso JS Advanced di Start2Impact University ha lo scopo di mostrare uno dei metodi per l'utilizzo di API di terze parti tramite JS.<br/>
 Il progetto implementa anche il bundle webpack. <br/>
-@@ -16,7 +16,7 @@ https://robi-ciresa.github.io/Progetto_JavaScript_Advanced_di_Roberta_Ciresa-/
+https://robi-ciresa.github.io/Progetto_JavaScript_Advanced_di_Roberta_Ciresa-/
 
 <h2>Più nel dettaglio</h2>
 L’applicazione visualizza alla prima apertura l’elenco delle ultime 10 news disponibili stampando a schermo il titolo, l'autore, la data (con piccola modifica*) e il link ove disponibile, se il link non è disponibile carica un contenuto di testo.<br/> 
