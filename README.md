@@ -6,7 +6,7 @@ Questo progetto sviluppato come esercizio per il corso JS Advanced di Start2Impa
 Il progetto implementa anche il bundle webpack. <br/>
 
 <h2>Link al progetto</h2>
-https://robi-ciresa.github.io/Progetto_JavaScript_Advanced_di_Roberta_Ciresa-/
+(https://robi-ciresa.github.io/Progetto_JavaScript_Advanced_di_Roberta_Ciresa-/dist/index.html)
 
 <h2>Più nel dettaglio</h2>
 L’applicazione visualizza alla prima apertura l’elenco delle ultime 10 news disponibili stampando a schermo il titolo, l'autore, la data (con piccola modifica*) e il link ove disponibile, se il link non è disponibile carica un contenuto di testo.<br/> 
